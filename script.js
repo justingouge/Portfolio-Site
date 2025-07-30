@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initContactForm();
     initSmoothScrolling();
     initTypingEffect();
+    initStarryBackground();
 });
 
 // Navigation functionality
@@ -560,3 +561,59 @@ const debouncedScrollHandler = debounce(function() {
 }, 10);
 
 window.addEventListener('scroll', debouncedScrollHandler);
+
+// Animated Starry Background
+function initStarryBackground() {
+    // Create stars container
+    const starsContainer = document.createElement('div');
+    starsContainer.className = 'stars';
+    document.body.appendChild(starsContainer);
+    
+    // Create regular stars
+    for (let i = 0; i < 100; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        
+        // Random position
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        
+        // Random size (1-3px)
+        const size = Math.random() * 2 + 1;
+        star.style.width = size + 'px';
+        star.style.height = size + 'px';
+        
+        // Random animation duration
+        star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        
+        starsContainer.appendChild(star);
+    }
+    
+    // Create shooting stars
+    function createShootingStar() {
+        const shootingStar = document.createElement('div');
+        shootingStar.className = 'shooting-star';
+        
+        // Random starting position
+        shootingStar.style.left = Math.random() * 100 + '%';
+        shootingStar.style.top = Math.random() * 100 + '%';
+        
+        // Random animation duration
+        shootingStar.style.animationDuration = (Math.random() * 2 + 1) + 's';
+        
+        starsContainer.appendChild(shootingStar);
+        
+        // Remove after animation
+        setTimeout(() => {
+            if (shootingStar.parentNode) {
+                shootingStar.remove();
+            }
+        }, 3000);
+    }
+    
+    // Create shooting stars periodically
+    setInterval(createShootingStar, 3000);
+    
+    // Create initial shooting star
+    setTimeout(createShootingStar, 1000);
+}
