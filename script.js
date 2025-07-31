@@ -341,13 +341,13 @@ function showNotification(message, type = 'info') {
         setTimeout(() => notification.remove(), 300);
     });
     
-    // Auto remove after 5 seconds
+    // Auto remove after 3 seconds
     setTimeout(() => {
         if (notification.parentNode) {
             notification.style.transform = 'translateX(400px)';
             setTimeout(() => notification.remove(), 300);
         }
-    }, 5000);
+    }, 3000);
 }
 
 // Parallax effect for hero section
@@ -565,13 +565,22 @@ window.addEventListener('scroll', debouncedScrollHandler);
 
 // Animated Starry Background
 function initStarryBackground() {
+    // Remove any existing stars container
+    const existingStars = document.querySelector('.stars');
+    if (existingStars) {
+        existingStars.remove();
+    }
+    
     // Create stars container
     const starsContainer = document.createElement('div');
     starsContainer.className = 'stars';
-    document.body.appendChild(starsContainer);
+    starsContainer.id = 'stars';
+    
+    // Insert at the beginning of body
+    document.body.insertBefore(starsContainer, document.body.firstChild);
     
     // Create regular stars
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 150; i++) {
         const star = document.createElement('div');
         star.className = 'star';
         
@@ -579,25 +588,48 @@ function initStarryBackground() {
         star.style.left = Math.random() * 100 + '%';
         star.style.top = Math.random() * 100 + '%';
         
-        // Random size (1-3px)
-        const size = Math.random() * 2 + 1;
+        // Random size (1-4px)
+        const size = Math.random() * 3 + 1;
         star.style.width = size + 'px';
         star.style.height = size + 'px';
         
         // Random animation duration
-        star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        star.style.animationDuration = (Math.random() * 4 + 2) + 's';
+        
+        // Random delay
+        star.style.animationDelay = Math.random() * 3 + 's';
         
         starsContainer.appendChild(star);
     }
     
     // Create shooting stars
     function createShootingStar() {
+        const starsContainer = document.getElementById('stars');
+        if (!starsContainer) return;
+        
         const shootingStar = document.createElement('div');
         shootingStar.className = 'shooting-star';
         
-        // Random starting position
-        shootingStar.style.left = Math.random() * 100 + '%';
-        shootingStar.style.top = Math.random() * 100 + '%';
+        // Random starting position (from edges)
+        const side = Math.floor(Math.random() * 4);
+        switch(side) {
+            case 0: // top
+                shootingStar.style.left = Math.random() * 100 + '%';
+                shootingStar.style.top = '0%';
+                break;
+            case 1: // right
+                shootingStar.style.left = '100%';
+                shootingStar.style.top = Math.random() * 100 + '%';
+                break;
+            case 2: // bottom
+                shootingStar.style.left = Math.random() * 100 + '%';
+                shootingStar.style.top = '100%';
+                break;
+            case 3: // left
+                shootingStar.style.left = '0%';
+                shootingStar.style.top = Math.random() * 100 + '%';
+                break;
+        }
         
         // Random animation duration
         shootingStar.style.animationDuration = (Math.random() * 2 + 1) + 's';
@@ -613,10 +645,10 @@ function initStarryBackground() {
     }
     
     // Create shooting stars periodically
-    setInterval(createShootingStar, 3000);
+    setInterval(createShootingStar, 4000);
     
     // Create initial shooting star
-    setTimeout(createShootingStar, 1000);
+    setTimeout(createShootingStar, 2000);
 }
 
 // Theme Toggle Functionality
