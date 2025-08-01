@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--nav-bg);
+    background: linear-gradient(135deg, var(--nav-bg) 0%, rgba(102, 126, 234, 0.1) 100%);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
@@ -391,7 +391,10 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: var(--bg-tertiary);
+    background: linear-gradient(to bottom, 
+        var(--bg-tertiary) 0%, 
+        var(--bg-tertiary) 85%, 
+        var(--bg-primary) 100%);
     padding-top: 80px;
     position: relative;
     z-index: 1;
@@ -776,9 +779,19 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact Section */
 .contact {
     padding: 150px 0 100px 0;
-    background: var(--bg-primary);
+    background: linear-gradient(to bottom, 
+        var(--bg-primary) 0%, 
+        var(--bg-primary) 85%, 
+        #2c3e50 100%);
     position: relative;
     z-index: 1;
+}
+
+[data-theme="dark"] .contact {
+    background: linear-gradient(to bottom, 
+        var(--bg-primary) 0%, 
+        var(--bg-primary) 85%, 
+        #1a1a2e 100%);
 }
 
 .contact-content {
