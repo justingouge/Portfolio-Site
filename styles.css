@@ -771,10 +771,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 .footer {
-    background: var(--text-primary);
-    color: var(--bg-primary);
+    background: #2c3e50;
+    color: white;
     padding: 2rem 0;
     text-align: center;
+}
+
+[data-theme="dark"] .footer {
+    background: #1a1a2e;
+    color: #ffffff;
 }
 
 .footer-content p {
