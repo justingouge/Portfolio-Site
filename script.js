@@ -306,7 +306,6 @@ function showNotification(message, type = 'info') {
     notification.innerHTML = `
         <div class="notification-content">
             <span class="notification-message">${message}</span>
-            <button class="notification-close">&times;</button>
         </div>
     `;
     
@@ -334,13 +333,6 @@ function showNotification(message, type = 'info') {
         notification.style.transform = 'translateX(0)';
     }, 100);
     
-    // Close button functionality
-    const closeBtn = notification.querySelector('.notification-close');
-    closeBtn.addEventListener('click', () => {
-        notification.style.transform = 'translateX(400px)';
-        setTimeout(() => notification.remove(), 300);
-    });
-    
     // Auto remove after 3 seconds
     setTimeout(() => {
         if (notification.parentNode) {
@@ -355,10 +347,16 @@ window.addEventListener('scroll', function() {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
     const heroContent = document.querySelector('.hero-content');
+    const heroImage = document.querySelector('.hero-image');
     
     if (hero && heroContent) {
         const rate = scrolled * -0.5;
         heroContent.style.transform = `translateY(${rate}px)`;
+        
+        // Apply same parallax effect to hero image
+        if (heroImage) {
+            heroImage.style.transform = `translateY(${rate}px)`;
+        }
     }
 });
 
