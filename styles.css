@@ -793,7 +793,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 100px 0 100px 0;
     background: linear-gradient(to bottom, 
         var(--bg-secondary) 0%, 
-        var(--bg-secondary) 70%, 
+        var(--bg-secondary) 40%, 
+        rgba(44, 62, 80, 0.3) 60%,
+        rgba(44, 62, 80, 0.7) 80%,
         #2c3e50 100%);
     position: relative;
     z-index: 1;
@@ -802,7 +804,9 @@ h1, h2, h3, h4, h5, h6 {
 [data-theme="dark"] .contact {
     background: linear-gradient(to bottom, 
         var(--bg-secondary) 0%, 
-        var(--bg-secondary) 70%, 
+        var(--bg-secondary) 40%, 
+        rgba(26, 26, 46, 0.3) 60%,
+        rgba(26, 26, 46, 0.7) 80%,
         #1a1a2e 100%);
 }
 
