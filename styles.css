@@ -791,9 +791,19 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact Section */
 .contact {
     padding: 100px 0 100px 0;
-    background: var(--bg-secondary);
+    background: linear-gradient(to bottom, 
+        var(--bg-secondary) 0%, 
+        var(--bg-secondary) 70%, 
+        #2c3e50 100%);
     position: relative;
     z-index: 1;
+}
+
+[data-theme="dark"] .contact {
+    background: linear-gradient(to bottom, 
+        var(--bg-secondary) 0%, 
+        var(--bg-secondary) 70%, 
+        #1a1a2e 100%);
 }
 
 .contact-content {
