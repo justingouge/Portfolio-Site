@@ -490,6 +490,28 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--bg-tertiary), var(--bg-primary));
+    z-index: -1;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+    z-index: -1;
+}
+
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -542,6 +564,28 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 
+.skills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+    z-index: -1;
+}
+
+.skills::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+    z-index: -1;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -587,6 +631,28 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--bg-primary);
     position: relative;
     z-index: 1;
+}
+
+.projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+    z-index: -1;
+}
+
+.projects::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+    z-index: -1;
 }
 
 .projects-grid {
@@ -674,6 +740,28 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--bg-secondary);
     position: relative;
     z-index: 1;
+}
+
+.experience::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+    z-index: -1;
+}
+
+.experience::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+    z-index: -1;
 }
 
 .timeline {
@@ -767,6 +855,17 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--bg-primary);
     position: relative;
     z-index: 1;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+    z-index: -1;
 }
 
 .contact-content {
