@@ -561,23 +561,29 @@ const debouncedScrollHandler = debounce(function() {
 
 window.addEventListener('scroll', debouncedScrollHandler);
 
-// Animated Starry Background
+// Animated Background (Stars for dark mode, Clouds for light mode)
 function initStarryBackground() {
-    // Remove any existing stars container
+    // Remove any existing background containers
     const existingStars = document.querySelector('.stars');
-    if (existingStars) {
-        existingStars.remove();
-    }
+    const existingClouds = document.querySelector('.clouds');
+    if (existingStars) existingStars.remove();
+    if (existingClouds) existingClouds.remove();
     
-    // Create stars container
+    // Create stars container for dark mode
     const starsContainer = document.createElement('div');
     starsContainer.className = 'stars';
     starsContainer.id = 'stars';
     
+    // Create clouds container for light mode
+    const cloudsContainer = document.createElement('div');
+    cloudsContainer.className = 'clouds';
+    cloudsContainer.id = 'clouds';
+    
     // Insert at the beginning of body
     document.body.insertBefore(starsContainer, document.body.firstChild);
+    document.body.insertBefore(cloudsContainer, document.body.firstChild);
     
-    // Create regular stars
+    // Create regular stars for dark mode
     for (let i = 0; i < 150; i++) {
         const star = document.createElement('div');
         star.className = 'star';
@@ -600,7 +606,29 @@ function initStarryBackground() {
         starsContainer.appendChild(star);
     }
     
-    // Create shooting stars
+    // Create clouds for light mode
+    for (let i = 0; i < 8; i++) {
+        const cloud = document.createElement('div');
+        cloud.className = 'cloud';
+        
+        // Random position
+        cloud.style.left = Math.random() * 120 - 10 + '%'; // Allow clouds to start off-screen
+        cloud.style.top = Math.random() * 60 + 10 + '%'; // Keep clouds in upper portion
+        
+        // Random size
+        const scale = Math.random() * 0.8 + 0.5; // 0.5 to 1.3 scale
+        cloud.style.transform = `scale(${scale})`;
+        
+        // Random animation duration
+        cloud.style.animationDuration = (Math.random() * 40 + 60) + 's'; // 60-100s for slow drift
+        
+        // Random delay
+        cloud.style.animationDelay = Math.random() * 20 + 's';
+        
+        cloudsContainer.appendChild(cloud);
+    }
+    
+    // Create shooting stars for dark mode
     function createShootingStar() {
         const starsContainer = document.getElementById('stars');
         if (!starsContainer) return;
@@ -642,7 +670,7 @@ function initStarryBackground() {
         }, 3000);
     }
     
-    // Create shooting stars periodically
+    // Create shooting stars periodically (dark mode only)
     setInterval(createShootingStar, 4000);
     
     // Create initial shooting star

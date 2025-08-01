@@ -73,7 +73,7 @@ body {
     box-shadow: 0 6px 20px var(--shadow);
 }
 
-/* Animated Starry Background */
+/* Animated Starry Background (Dark Mode Only) */
 .stars {
     position: fixed;
     top: 0;
@@ -144,6 +144,100 @@ body {
     100% {
         transform: translateX(300px) translateY(-300px);
         opacity: 0;
+    }
+}
+
+/* Animated Cloud Background (Light Mode Only) */
+.clouds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    overflow: hidden;
+}
+
+[data-theme="dark"] .clouds {
+    opacity: 0 !important;
+}
+
+.cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    animation: float linear infinite;
+    opacity: 0.6;
+}
+
+.cloud::before,
+.cloud::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+}
+
+.cloud::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 10px;
+}
+
+.cloud::after {
+    width: 60px;
+    height: 60px;
+    top: -35px;
+    right: 10px;
+}
+
+.cloud {
+    width: 100px;
+    height: 40px;
+}
+
+.cloud:nth-child(1) {
+    animation-duration: 80s;
+}
+
+.cloud:nth-child(2) {
+    animation-duration: 70s;
+}
+
+.cloud:nth-child(3) {
+    animation-duration: 90s;
+}
+
+.cloud:nth-child(4) {
+    animation-duration: 85s;
+}
+
+.cloud:nth-child(5) {
+    animation-duration: 75s;
+}
+
+.cloud:nth-child(6) {
+    animation-duration: 95s;
+}
+
+.cloud:nth-child(7) {
+    animation-duration: 65s;
+}
+
+.cloud:nth-child(8) {
+    animation-duration: 100s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(-120px);
+    }
+    100% {
+        transform: translateX(calc(100vw + 120px));
     }
 }
 
