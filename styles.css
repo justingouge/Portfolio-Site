@@ -489,10 +489,7 @@ h1, h2, h3, h4, h5, h6 {
 /* About Section */
 .about {
     padding: 150px 0 150px 0;
-    background: linear-gradient(to bottom, 
-        var(--bg-primary) 0%, 
-        var(--bg-primary) 85%, 
-        var(--bg-secondary) 100%);
+    background: var(--bg-primary);
     position: relative;
     z-index: 1;
 }
@@ -544,10 +541,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Skills Section */
 .skills {
     padding: 150px 0 150px 0;
-    background: linear-gradient(to bottom, 
-        var(--bg-secondary) 0%, 
-        var(--bg-secondary) 85%, 
-        var(--bg-primary) 100%);
+    background: var(--bg-secondary);
     position: relative;
     z-index: 1;
 }
@@ -594,10 +588,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Projects Section */
 .projects {
     padding: 150px 0 150px 0;
-    background: linear-gradient(to bottom, 
-        var(--bg-primary) 0%, 
-        var(--bg-primary) 85%, 
-        var(--bg-secondary) 100%);
+    background: var(--bg-primary);
     position: relative;
     z-index: 1;
 }
@@ -787,21 +778,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact Section */
 .contact {
     padding: 150px 0 100px 0;
-    background: linear-gradient(to bottom, 
-        var(--bg-primary) 0%, 
-        var(--bg-secondary) 25%, 
-        var(--bg-primary) 85%, 
-        #2c3e50 100%);
+    background: var(--bg-primary);
     position: relative;
     z-index: 1;
-}
-
-[data-theme="dark"] .contact {
-    background: linear-gradient(to bottom, 
-        var(--bg-primary) 0%, 
-        var(--bg-secondary) 25%, 
-        var(--bg-primary) 85%, 
-        #1a1a2e 100%);
 }
 
 .contact-content {
