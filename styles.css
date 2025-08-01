@@ -692,8 +692,8 @@ h1, h2, h3, h4, h5, h6 {
 /* First Experience section (Education) */
 .experience:first-of-type {
     background: linear-gradient(to bottom, 
-        var(--bg-primary) 0%, 
-        var(--bg-secondary) 15%, 
+        var(--bg-secondary) 0%, 
+        var(--bg-secondary) 85%, 
         var(--bg-secondary) 100%);
 }
 
@@ -702,7 +702,7 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(to bottom, 
         var(--bg-secondary) 0%, 
         var(--bg-secondary) 85%, 
-        var(--bg-primary) 100%);
+        var(--bg-secondary) 100%);
 }
 
 .timeline {
