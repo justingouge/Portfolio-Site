@@ -93,9 +93,37 @@ body {
 
 .star {
     position: absolute;
-    background: #ffffff;
-    border-radius: 50%;
+    background: transparent;
     animation: twinkle 3s infinite;
+    width: 0;
+    height: 0;
+}
+
+.star::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -6px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    transform: rotate(35deg);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.star::after {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -6px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    transform: rotate(-35deg);
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
 }
 
