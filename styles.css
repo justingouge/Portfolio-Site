@@ -487,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 150px 0 150px 0;
     background: linear-gradient(to bottom, 
         var(--bg-primary) 0%, 
-        var(--bg-primary) 75%, 
+        var(--bg-primary) 85%, 
         var(--bg-secondary) 100%);
     position: relative;
     z-index: 1;
@@ -541,8 +541,7 @@ h1, h2, h3, h4, h5, h6 {
 .skills {
     padding: 150px 0 150px 0;
     background: linear-gradient(to bottom, 
-        var(--bg-primary) 0%, 
-        var(--bg-secondary) 15%, 
+        var(--bg-secondary) 0%, 
         var(--bg-secondary) 85%, 
         var(--bg-primary) 100%);
     position: relative;
@@ -592,9 +591,8 @@ h1, h2, h3, h4, h5, h6 {
 .projects {
     padding: 150px 0 150px 0;
     background: linear-gradient(to bottom, 
-        var(--bg-secondary) 0%, 
-        var(--bg-primary) 25%, 
-        var(--bg-primary) 75%, 
+        var(--bg-primary) 0%, 
+        var(--bg-primary) 85%, 
         var(--bg-secondary) 100%);
     position: relative;
     z-index: 1;
@@ -683,8 +681,7 @@ h1, h2, h3, h4, h5, h6 {
 .experience {
     padding: 150px 0 150px 0;
     background: linear-gradient(to bottom, 
-        var(--bg-primary) 0%, 
-        var(--bg-secondary) 15%, 
+        var(--bg-secondary) 0%, 
         var(--bg-secondary) 85%, 
         var(--bg-primary) 100%);
     position: relative;
