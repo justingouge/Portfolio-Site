@@ -391,7 +391,10 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: var(--bg-tertiary);
+    background: linear-gradient(to bottom, 
+        var(--bg-tertiary) 0%, 
+        var(--bg-tertiary) 85%, 
+        var(--bg-primary) 100%);
     padding-top: 80px;
     position: relative;
     z-index: 1;
