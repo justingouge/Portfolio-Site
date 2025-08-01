@@ -44,10 +44,14 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
-    background: var(--bg-tertiary);
+    background: linear-gradient(135deg, #87CEEB 0%, #98D8E8 50%, #B0E0E6 100%);
     position: relative;
     overflow-x: hidden;
     transition: all 0.3s ease;
+}
+
+[data-theme="dark"] body {
+    background: var(--bg-tertiary);
 }
 
 /* Theme Toggle Button */
