@@ -11,15 +11,15 @@ html {
 
 /* CSS Variables for Light/Dark Mode */
 :root {
-    --bg-primary: rgba(255, 255, 255, 0.8);
-    --bg-secondary: rgba(248, 249, 250, 0.8);
+    --bg-primary: rgba(255, 255, 255, 0.3);
+    --bg-secondary: rgba(248, 249, 250, 0.4);
     --bg-tertiary: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     --text-primary: #333333;
     --text-secondary: #666666;
     --text-tertiary: #999999;
     --accent-primary: #667eea;
     --accent-secondary: #764ba2;
-    --card-bg: rgba(255, 255, 255, 0.9);
+    --card-bg: rgba(255, 255, 255, 0.7);
     --nav-bg: rgba(255, 255, 255, 0.95);
     --border-color: #e9ecef;
     --shadow: rgba(0, 0, 0, 0.1);
