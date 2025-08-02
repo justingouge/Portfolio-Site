@@ -1194,15 +1194,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 .footer {
-    background: #2c3e50;
-    color: white;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    color: var(--text-primary);
     padding: 2rem 0;
     text-align: center;
+    border-top: 1px solid var(--border-color);
 }
 
 [data-theme="dark"] .footer {
-    background: #1a1a2e;
-    color: #ffffff;
+    background: rgba(12, 12, 12, 0.8);
+    color: var(--text-primary);
 }
 
 .footer-content p {
