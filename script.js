@@ -691,13 +691,17 @@ function initStarryBackground() {
     // Random moon phase
     const moonPhases = [
         'new-moon',
-        'waxing-crescent', 
+        'waxing-crescent-1',
+        'waxing-crescent-2', 
         'first-quarter',
-        'waxing-gibbous',
-        'full-moon', // full moon has no ::after pseudo-element
-        'waning-gibbous',
+        'waxing-gibbous-1',
+        'waxing-gibbous-2',
+        'full-moon',
+        'waning-gibbous-1',
+        'waning-gibbous-2',
         'last-quarter',
-        'waning-crescent'
+        'waning-crescent-1',
+        'waning-crescent-2'
     ];
     
     const randomPhase = moonPhases[Math.floor(Math.random() * moonPhases.length)];
