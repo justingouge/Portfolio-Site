@@ -19,7 +19,7 @@ html {
     --text-tertiary: #999999;
     --accent-primary: #667eea;
     --accent-secondary: #764ba2;
-    --card-bg: rgba(255, 255, 255, 0.7);
+    --card-bg: rgba(255, 255, 255, 0.8);
     --nav-bg: rgba(255, 255, 255, 0.95);
     --border-color: #e9ecef;
     --shadow: rgba(0, 0, 0, 0.1);
@@ -34,7 +34,7 @@ html {
     --text-tertiary: #999999;
     --accent-primary: #667eea;
     --accent-secondary: #764ba2;
-    --card-bg: rgba(255, 255, 255, 0.1);
+    --card-bg: rgba(255, 255, 255, 0.15);
     --nav-bg: rgba(12, 12, 12, 0.95);
     --border-color: rgba(255, 255, 255, 0.1);
     --shadow: rgba(0, 0, 0, 0.3);
