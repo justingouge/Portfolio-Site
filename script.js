@@ -626,20 +626,27 @@ function initStarryBackground() {
     }
     
     // Create clouds for light mode
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 15; i++) {
         const cloud = document.createElement('div');
         cloud.className = 'cloud';
         
         // Distribute clouds across the screen - some visible, some off-screen
         const positions = [
             '-150px',    // Off-screen left
-            '10%',       // Visible on screen
-            '25%',       // Visible on screen
+            '5%',        // Visible on screen
+            '15%',       // Visible on screen
             '-100px',    // Off-screen left
-            '40%',       // Visible on screen
-            '60%',       // Visible on screen
+            '25%',       // Visible on screen
+            '35%',       // Visible on screen
             '-200px',    // Off-screen left
-            '80%'        // Visible on screen
+            '45%',       // Visible on screen
+            '55%',       // Visible on screen
+            '-120px',    // Off-screen left
+            '65%',       // Visible on screen
+            '75%',       // Visible on screen
+            '-180px',    // Off-screen left
+            '85%',       // Visible on screen
+            '95%'        // Visible on screen
         ];
         
         cloud.style.left = positions[i]; // Use predefined positions

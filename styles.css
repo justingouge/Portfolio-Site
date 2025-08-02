@@ -244,6 +244,41 @@ body {
     animation-delay: 0s;
 }
 
+.cloud:nth-child(9) {
+    animation-duration: 125s;
+    animation-delay: 0s;
+}
+
+.cloud:nth-child(10) {
+    animation-duration: 135s;
+    animation-delay: 0s;
+}
+
+.cloud:nth-child(11) {
+    animation-duration: 145s;
+    animation-delay: 0s;
+}
+
+.cloud:nth-child(12) {
+    animation-duration: 155s;
+    animation-delay: 0s;
+}
+
+.cloud:nth-child(13) {
+    animation-duration: 165s;
+    animation-delay: 0s;
+}
+
+.cloud:nth-child(14) {
+    animation-duration: 175s;
+    animation-delay: 0s;
+}
+
+.cloud:nth-child(15) {
+    animation-duration: 185s;
+    animation-delay: 0s;
+}
+
 @keyframes cloudFloat {
     0% {
         transform: translate3d(-150px, 0, 0);
