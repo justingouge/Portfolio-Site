@@ -800,10 +800,12 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .nav-menu {
-    margin-left: auto;
+    position: absolute;
+    right: 0;
 }
 
 .nav-logo a {
