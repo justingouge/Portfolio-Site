@@ -630,8 +630,19 @@ function initStarryBackground() {
         const cloud = document.createElement('div');
         cloud.className = 'cloud';
         
-        // Fixed position - all clouds start from the left
-        cloud.style.left = '-150px'; // Start all clouds from the same left position
+        // Distribute clouds across the screen - some visible, some off-screen
+        const positions = [
+            '-150px',    // Off-screen left
+            '10%',       // Visible on screen
+            '25%',       // Visible on screen
+            '-100px',    // Off-screen left
+            '40%',       // Visible on screen
+            '60%',       // Visible on screen
+            '-200px',    // Off-screen left
+            '80%'        // Visible on screen
+        ];
+        
+        cloud.style.left = positions[i]; // Use predefined positions
         cloud.style.top = Math.random() * 60 + 10 + '%'; // Keep clouds in upper portion
         
         // Random size
