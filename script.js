@@ -622,8 +622,11 @@ function initStarryBackground() {
         // Random animation duration
         cloud.style.animationDuration = (Math.random() * 40 + 60) + 's'; // 60-100s for slow drift
         
-        // Random delay
-        cloud.style.animationDelay = Math.random() * 20 + 's';
+        // Random delay - start some immediately, others with delay
+        cloud.style.animationDelay = Math.random() * 10 + 's'; // Reduced delay to 0-10s
+        
+        // Ensure animation starts immediately
+        cloud.style.animationPlayState = 'running';
         
         cloudsContainer.appendChild(cloud);
     }
