@@ -630,19 +630,19 @@ function initStarryBackground() {
         const cloud = document.createElement('div');
         cloud.className = 'cloud';
         
-        // Random position
-        cloud.style.left = Math.random() * 120 - 10 + '%'; // Allow clouds to start off-screen
+        // Fixed position - all clouds start from the left
+        cloud.style.left = '-150px'; // Start all clouds from the same left position
         cloud.style.top = Math.random() * 60 + 10 + '%'; // Keep clouds in upper portion
         
         // Random size
         const scale = Math.random() * 0.8 + 0.5; // 0.5 to 1.3 scale
         cloud.style.transform = `scale(${scale})`;
         
-        // Random animation duration
-        cloud.style.animationDuration = (Math.random() * 40 + 60) + 's'; // 60-100s for slow drift
+        // Use predefined durations from CSS instead of random
+        // The CSS will handle the different speeds for each cloud
         
-        // Random delay - start some immediately, others with delay
-        cloud.style.animationDelay = Math.random() * 10 + 's'; // Reduced delay to 0-10s
+        // No delay - all clouds start immediately
+        cloud.style.animationDelay = '0s';
         
         // Ensure animation starts immediately
         cloud.style.animationPlayState = 'running';
