@@ -639,6 +639,32 @@ function initStarryBackground() {
     
     cloudsContainer.appendChild(sun);
     
+    // Create moon for dark mode
+    const moon = document.createElement('div');
+    moon.className = 'moon';
+    moon.id = 'moon';
+    
+    // Random position in upper portion of screen
+    moon.style.left = Math.random() * 70 + 15 + '%'; // 15% to 85% from left
+    moon.style.top = Math.random() * 30 + 10 + '%'; // 10% to 40% from top
+    
+    // Random moon phase
+    const moonPhases = [
+        'new-moon',
+        'waxing-crescent', 
+        'first-quarter',
+        'waxing-gibbous',
+        'full-moon', // full moon has no ::after pseudo-element
+        'waning-gibbous',
+        'last-quarter',
+        'waning-crescent'
+    ];
+    
+    const randomPhase = moonPhases[Math.floor(Math.random() * moonPhases.length)];
+    moon.classList.add(randomPhase);
+    
+    starsContainer.appendChild(moon);
+    
     // Create shooting stars for dark mode
     function createShootingStar() {
         const starsContainer = document.getElementById('stars');

@@ -26,9 +26,9 @@ html {
 }
 
 [data-theme="dark"] {
-    --bg-primary: rgba(12, 12, 12, 0.8);
-    --bg-secondary: rgba(26, 26, 46, 0.8);
-    --bg-tertiary: linear-gradient(135deg, rgba(12, 12, 12, 0.9) 0%, rgba(26, 26, 46, 0.9) 50%, rgba(22, 33, 62, 0.9) 100%);
+    --bg-primary: transparent;
+    --bg-secondary: transparent;
+    --bg-tertiary: linear-gradient(135deg, #2D1B69 0%, #11998e 50%, #38ef7d 100%);
     --text-primary: #ffffff;
     --text-secondary: #cccccc;
     --text-tertiary: #999999;
@@ -280,6 +280,127 @@ body {
 }
 
 @keyframes sunRays {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Moon for dark mode */
+.moon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #F5F5DC 0%, #E6E6FA 70%, #D3D3D3 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(245, 245, 220, 0.6), 0 0 40px rgba(245, 245, 220, 0.3);
+    animation: moonGlow 6s ease-in-out infinite alternate;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.moon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(245, 245, 220, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: moonHalo 10s linear infinite;
+}
+
+/* Moon phases */
+.moon.new-moon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2D1B69;
+    border-radius: 50%;
+}
+
+.moon.waxing-crescent::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: #2D1B69;
+    border-radius: 50%;
+}
+
+.moon.first-quarter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #2D1B69;
+    border-radius: 50%;
+}
+
+.moon.waxing-gibbous::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background: #2D1B69;
+    border-radius: 50%;
+}
+
+.moon.waning-gibbous::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background: #2D1B69;
+    border-radius: 50%;
+}
+
+.moon.last-quarter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #2D1B69;
+    border-radius: 50%;
+}
+
+.moon.waning-crescent::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background: #2D1B69;
+    border-radius: 50%;
+}
+
+@keyframes moonGlow {
+    0% {
+        box-shadow: 0 0 20px rgba(245, 245, 220, 0.6), 0 0 40px rgba(245, 245, 220, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(245, 245, 220, 0.8), 0 0 60px rgba(245, 245, 220, 0.5);
+    }
+}
+
+@keyframes moonHalo {
     0% {
         transform: rotate(0deg);
     }
