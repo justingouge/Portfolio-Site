@@ -329,7 +329,7 @@ body {
     animation-delay: 0s;
     width: 130px;
     height: 52px;
-    border-radius: 65px 26px 65px 39px;
+    border-radius: 65px 52px 65px 52px;
 }
 
 .cloud:nth-child(6)::before {
@@ -337,7 +337,7 @@ body {
     height: 65px;
     top: -32px;
     left: 13px;
-    border-radius: 32px 65px 32px 48px;
+    border-radius: 65px 48px 65px 48px;
 }
 
 .cloud:nth-child(6)::after {
@@ -345,7 +345,7 @@ body {
     height: 78px;
     top: -45px;
     right: 13px;
-    border-radius: 78px 39px 58px 78px;
+    border-radius: 78px 58px 78px 58px;
 }
 
 .cloud:nth-child(7) {
@@ -353,7 +353,7 @@ body {
     animation-delay: 0s;
     width: 85px;
     height: 34px;
-    border-radius: 42px 17px 42px 25px;
+    border-radius: 42px 34px 42px 34px;
 }
 
 .cloud:nth-child(7)::before {
@@ -361,7 +361,7 @@ body {
     height: 42px;
     top: -21px;
     left: 8px;
-    border-radius: 21px 42px 31px 21px;
+    border-radius: 42px 31px 42px 31px;
 }
 
 .cloud:nth-child(7)::after {
@@ -369,7 +369,7 @@ body {
     height: 51px;
     top: -29px;
     right: 8px;
-    border-radius: 51px 25px 38px 51px;
+    border-radius: 51px 38px 51px 38px;
 }
 
 .cloud:nth-child(8) {
@@ -377,7 +377,7 @@ body {
     animation-delay: 0s;
     width: 140px;
     height: 56px;
-    border-radius: 70px 28px 70px 42px;
+    border-radius: 70px 56px 70px 56px;
 }
 
 .cloud:nth-child(8)::before {
@@ -385,7 +385,7 @@ body {
     height: 70px;
     top: -35px;
     left: 14px;
-    border-radius: 35px 70px 52px 35px;
+    border-radius: 70px 52px 70px 52px;
 }
 
 .cloud:nth-child(8)::after {
@@ -393,7 +393,7 @@ body {
     height: 84px;
     top: -49px;
     right: 14px;
-    border-radius: 84px 42px 63px 84px;
+    border-radius: 84px 63px 84px 63px;
 }
 
 .cloud:nth-child(9) {
@@ -401,7 +401,7 @@ body {
     animation-delay: 0s;
     width: 75px;
     height: 30px;
-    border-radius: 37px 15px 37px 22px;
+    border-radius: 37px 30px 37px 30px;
 }
 
 .cloud:nth-child(9)::before {
@@ -409,7 +409,7 @@ body {
     height: 37px;
     top: -18px;
     left: 7px;
-    border-radius: 18px 37px 27px 18px;
+    border-radius: 37px 27px 37px 27px;
 }
 
 .cloud:nth-child(9)::after {
@@ -417,7 +417,7 @@ body {
     height: 45px;
     top: -26px;
     right: 7px;
-    border-radius: 45px 22px 33px 45px;
+    border-radius: 45px 33px 45px 33px;
 }
 
 .cloud:nth-child(10) {
@@ -425,7 +425,7 @@ body {
     animation-delay: 0s;
     width: 105px;
     height: 42px;
-    border-radius: 52px 21px 52px 31px;
+    border-radius: 52px 42px 52px 42px;
 }
 
 .cloud:nth-child(10)::before {
@@ -433,7 +433,7 @@ body {
     height: 52px;
     top: -26px;
     left: 10px;
-    border-radius: 26px 52px 39px 26px;
+    border-radius: 52px 39px 52px 39px;
 }
 
 .cloud:nth-child(10)::after {
@@ -441,7 +441,7 @@ body {
     height: 63px;
     top: -36px;
     right: 10px;
-    border-radius: 63px 31px 47px 63px;
+    border-radius: 63px 47px 63px 47px;
 }
 
 .cloud:nth-child(11) {
@@ -449,7 +449,7 @@ body {
     animation-delay: 0s;
     width: 95px;
     height: 38px;
-    border-radius: 47px 19px 47px 28px;
+    border-radius: 47px 38px 47px 38px;
 }
 
 .cloud:nth-child(11)::before {
@@ -457,7 +457,7 @@ body {
     height: 47px;
     top: -23px;
     left: 9px;
-    border-radius: 23px 47px 35px 23px;
+    border-radius: 47px 35px 47px 35px;
 }
 
 .cloud:nth-child(11)::after {
@@ -465,7 +465,7 @@ body {
     height: 57px;
     top: -33px;
     right: 9px;
-    border-radius: 57px 28px 42px 57px;
+    border-radius: 57px 42px 57px 42px;
 }
 
 .cloud:nth-child(12) {
@@ -473,7 +473,7 @@ body {
     animation-delay: 0s;
     width: 115px;
     height: 46px;
-    border-radius: 57px 23px 57px 34px;
+    border-radius: 57px 46px 57px 46px;
 }
 
 .cloud:nth-child(12)::before {
@@ -481,7 +481,7 @@ body {
     height: 57px;
     top: -28px;
     left: 11px;
-    border-radius: 28px 57px 42px 28px;
+    border-radius: 57px 42px 57px 42px;
 }
 
 .cloud:nth-child(12)::after {
@@ -489,7 +489,7 @@ body {
     height: 69px;
     top: -40px;
     right: 11px;
-    border-radius: 69px 34px 51px 69px;
+    border-radius: 69px 51px 69px 51px;
 }
 
 .cloud:nth-child(13) {
@@ -497,7 +497,7 @@ body {
     animation-delay: 0s;
     width: 65px;
     height: 26px;
-    border-radius: 32px 13px 32px 19px;
+    border-radius: 32px 26px 32px 26px;
 }
 
 .cloud:nth-child(13)::before {
@@ -505,7 +505,7 @@ body {
     height: 32px;
     top: -16px;
     left: 6px;
-    border-radius: 16px 32px 24px 16px;
+    border-radius: 32px 24px 32px 24px;
 }
 
 .cloud:nth-child(13)::after {
@@ -513,7 +513,7 @@ body {
     height: 39px;
     top: -22px;
     right: 6px;
-    border-radius: 39px 19px 29px 39px;
+    border-radius: 39px 29px 39px 29px;
 }
 
 .cloud:nth-child(14) {
@@ -521,7 +521,7 @@ body {
     animation-delay: 0s;
     width: 125px;
     height: 50px;
-    border-radius: 62px 25px 62px 37px;
+    border-radius: 62px 50px 62px 50px;
 }
 
 .cloud:nth-child(14)::before {
@@ -529,7 +529,7 @@ body {
     height: 62px;
     top: -31px;
     left: 12px;
-    border-radius: 31px 62px 46px 31px;
+    border-radius: 62px 46px 62px 46px;
 }
 
 .cloud:nth-child(14)::after {
@@ -537,7 +537,7 @@ body {
     height: 75px;
     top: -43px;
     right: 12px;
-    border-radius: 75px 37px 56px 75px;
+    border-radius: 75px 56px 75px 56px;
 }
 
 .cloud:nth-child(15) {
@@ -545,7 +545,7 @@ body {
     animation-delay: 0s;
     width: 100px;
     height: 40px;
-    border-radius: 50px 20px 50px 30px;
+    border-radius: 50px 40px 50px 40px;
 }
 
 .cloud:nth-child(15)::before {
@@ -553,7 +553,7 @@ body {
     height: 50px;
     top: -25px;
     left: 10px;
-    border-radius: 25px 50px 37px 25px;
+    border-radius: 50px 37px 50px 37px;
 }
 
 .cloud:nth-child(15)::after {
@@ -561,7 +561,7 @@ body {
     height: 60px;
     top: -35px;
     right: 10px;
-    border-radius: 60px 30px 45px 60px;
+    border-radius: 60px 45px 60px 45px;
 }
 
 @keyframes cloudFloat {
