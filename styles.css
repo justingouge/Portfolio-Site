@@ -175,6 +175,7 @@ body {
     border-radius: 50px;
     animation: float linear infinite;
     opacity: 0.6;
+    z-index: 2;
 }
 
 .cloud::before,
@@ -254,6 +255,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 30px rgba(255, 215, 0, 0.8), 0 0 60px rgba(255, 215, 0, 0.4);
     animation: sunGlow 4s ease-in-out infinite alternate;
+    z-index: 1;
 }
 
 .sun::before {
