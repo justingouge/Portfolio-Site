@@ -802,6 +802,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.nav-menu {
+    margin-left: auto;
+}
+
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;
