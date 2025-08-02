@@ -211,37 +211,37 @@ body {
 
 .cloud:nth-child(2) {
     animation-duration: 140s;
-    animation-delay: -20s;
+    animation-delay: 0s;
 }
 
 .cloud:nth-child(3) {
     animation-duration: 160s;
-    animation-delay: -40s;
+    animation-delay: 0s;
 }
 
 .cloud:nth-child(4) {
     animation-duration: 130s;
-    animation-delay: -60s;
+    animation-delay: 0s;
 }
 
 .cloud:nth-child(5) {
     animation-duration: 150s;
-    animation-delay: -80s;
+    animation-delay: 0s;
 }
 
 .cloud:nth-child(6) {
     animation-duration: 110s;
-    animation-delay: -100s;
+    animation-delay: 0s;
 }
 
 .cloud:nth-child(7) {
     animation-duration: 170s;
-    animation-delay: -120s;
+    animation-delay: 0s;
 }
 
 .cloud:nth-child(8) {
     animation-duration: 180s;
-    animation-delay: -140s;
+    animation-delay: 0s;
 }
 
 @keyframes cloudFloat {
