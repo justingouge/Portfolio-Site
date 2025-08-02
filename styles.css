@@ -172,14 +172,15 @@ body {
 .cloud {
     position: absolute;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 50px;
+    border-radius: 100px;
     width: 100px;
     height: 40px;
-    opacity: 0.6;
+    opacity: 0.7;
     z-index: 2;
     will-change: transform;
     animation: cloudFloat linear infinite;
     animation-fill-mode: both;
+    filter: blur(1px);
 }
 
 .cloud::before,
@@ -187,21 +188,22 @@ body {
     content: '';
     position: absolute;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 50px;
+    border-radius: 100px;
+    filter: blur(1px);
 }
 
 .cloud::before {
     width: 50px;
     height: 50px;
-    top: -15px;
-    left: 15px;
+    top: -25px;
+    left: 10px;
 }
 
 .cloud::after {
     width: 60px;
     height: 60px;
-    top: -20px;
-    right: 15px;
+    top: -25px;
+    right: 10px;
 }
 
 .cloud:nth-child(1) {
