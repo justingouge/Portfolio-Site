@@ -207,76 +207,316 @@ body {
 .cloud:nth-child(1) {
     animation-duration: 120s;
     animation-delay: 0s;
+    width: 80px;
+    height: 32px;
+}
+
+.cloud:nth-child(1)::before {
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 8px;
+}
+
+.cloud:nth-child(1)::after {
+    width: 48px;
+    height: 48px;
+    top: -28px;
+    right: 8px;
 }
 
 .cloud:nth-child(2) {
     animation-duration: 140s;
     animation-delay: 0s;
+    width: 120px;
+    height: 48px;
+}
+
+.cloud:nth-child(2)::before {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: 12px;
+}
+
+.cloud:nth-child(2)::after {
+    width: 72px;
+    height: 72px;
+    top: -42px;
+    right: 12px;
 }
 
 .cloud:nth-child(3) {
     animation-duration: 160s;
     animation-delay: 0s;
+    width: 90px;
+    height: 36px;
+}
+
+.cloud:nth-child(3)::before {
+    width: 45px;
+    height: 45px;
+    top: -22px;
+    left: 9px;
+}
+
+.cloud:nth-child(3)::after {
+    width: 54px;
+    height: 54px;
+    top: -31px;
+    right: 9px;
 }
 
 .cloud:nth-child(4) {
     animation-duration: 130s;
     animation-delay: 0s;
+    width: 110px;
+    height: 44px;
+}
+
+.cloud:nth-child(4)::before {
+    width: 55px;
+    height: 55px;
+    top: -27px;
+    left: 11px;
+}
+
+.cloud:nth-child(4)::after {
+    width: 66px;
+    height: 66px;
+    top: -38px;
+    right: 11px;
 }
 
 .cloud:nth-child(5) {
     animation-duration: 150s;
     animation-delay: 0s;
+    width: 70px;
+    height: 28px;
+}
+
+.cloud:nth-child(5)::before {
+    width: 35px;
+    height: 35px;
+    top: -17px;
+    left: 7px;
+}
+
+.cloud:nth-child(5)::after {
+    width: 42px;
+    height: 42px;
+    top: -24px;
+    right: 7px;
 }
 
 .cloud:nth-child(6) {
     animation-duration: 110s;
     animation-delay: 0s;
+    width: 130px;
+    height: 52px;
+}
+
+.cloud:nth-child(6)::before {
+    width: 65px;
+    height: 65px;
+    top: -32px;
+    left: 13px;
+}
+
+.cloud:nth-child(6)::after {
+    width: 78px;
+    height: 78px;
+    top: -45px;
+    right: 13px;
 }
 
 .cloud:nth-child(7) {
     animation-duration: 170s;
     animation-delay: 0s;
+    width: 85px;
+    height: 34px;
+}
+
+.cloud:nth-child(7)::before {
+    width: 42px;
+    height: 42px;
+    top: -21px;
+    left: 8px;
+}
+
+.cloud:nth-child(7)::after {
+    width: 51px;
+    height: 51px;
+    top: -29px;
+    right: 8px;
 }
 
 .cloud:nth-child(8) {
     animation-duration: 180s;
     animation-delay: 0s;
+    width: 140px;
+    height: 56px;
+}
+
+.cloud:nth-child(8)::before {
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    left: 14px;
+}
+
+.cloud:nth-child(8)::after {
+    width: 84px;
+    height: 84px;
+    top: -49px;
+    right: 14px;
 }
 
 .cloud:nth-child(9) {
     animation-duration: 125s;
     animation-delay: 0s;
+    width: 75px;
+    height: 30px;
+}
+
+.cloud:nth-child(9)::before {
+    width: 37px;
+    height: 37px;
+    top: -18px;
+    left: 7px;
+}
+
+.cloud:nth-child(9)::after {
+    width: 45px;
+    height: 45px;
+    top: -26px;
+    right: 7px;
 }
 
 .cloud:nth-child(10) {
     animation-duration: 135s;
     animation-delay: 0s;
+    width: 105px;
+    height: 42px;
+}
+
+.cloud:nth-child(10)::before {
+    width: 52px;
+    height: 52px;
+    top: -26px;
+    left: 10px;
+}
+
+.cloud:nth-child(10)::after {
+    width: 63px;
+    height: 63px;
+    top: -36px;
+    right: 10px;
 }
 
 .cloud:nth-child(11) {
     animation-duration: 145s;
     animation-delay: 0s;
+    width: 95px;
+    height: 38px;
+}
+
+.cloud:nth-child(11)::before {
+    width: 47px;
+    height: 47px;
+    top: -23px;
+    left: 9px;
+}
+
+.cloud:nth-child(11)::after {
+    width: 57px;
+    height: 57px;
+    top: -33px;
+    right: 9px;
 }
 
 .cloud:nth-child(12) {
     animation-duration: 155s;
     animation-delay: 0s;
+    width: 115px;
+    height: 46px;
+}
+
+.cloud:nth-child(12)::before {
+    width: 57px;
+    height: 57px;
+    top: -28px;
+    left: 11px;
+}
+
+.cloud:nth-child(12)::after {
+    width: 69px;
+    height: 69px;
+    top: -40px;
+    right: 11px;
 }
 
 .cloud:nth-child(13) {
     animation-duration: 165s;
     animation-delay: 0s;
+    width: 65px;
+    height: 26px;
+}
+
+.cloud:nth-child(13)::before {
+    width: 32px;
+    height: 32px;
+    top: -16px;
+    left: 6px;
+}
+
+.cloud:nth-child(13)::after {
+    width: 39px;
+    height: 39px;
+    top: -22px;
+    right: 6px;
 }
 
 .cloud:nth-child(14) {
     animation-duration: 175s;
     animation-delay: 0s;
+    width: 125px;
+    height: 50px;
+}
+
+.cloud:nth-child(14)::before {
+    width: 62px;
+    height: 62px;
+    top: -31px;
+    left: 12px;
+}
+
+.cloud:nth-child(14)::after {
+    width: 75px;
+    height: 75px;
+    top: -43px;
+    right: 12px;
 }
 
 .cloud:nth-child(15) {
     animation-duration: 185s;
     animation-delay: 0s;
+    width: 100px;
+    height: 40px;
+}
+
+.cloud:nth-child(15)::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 10px;
+}
+
+.cloud:nth-child(15)::after {
+    width: 60px;
+    height: 60px;
+    top: -35px;
+    right: 10px;
 }
 
 @keyframes cloudFloat {
