@@ -245,6 +245,47 @@ body {
     }
 }
 
+/* Sun for light mode */
+.sun {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #FFD700 0%, #FFA500 70%, #FF8C00 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8), 0 0 60px rgba(255, 215, 0, 0.4);
+    animation: sunGlow 4s ease-in-out infinite alternate;
+}
+
+.sun::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.3) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: sunRays 8s linear infinite;
+}
+
+@keyframes sunGlow {
+    0% {
+        box-shadow: 0 0 30px rgba(255, 215, 0, 0.8), 0 0 60px rgba(255, 215, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 40px rgba(255, 215, 0, 1), 0 0 80px rgba(255, 215, 0, 0.6);
+    }
+}
+
+@keyframes sunRays {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -795,12 +836,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact Section */
 .contact {
     padding: 100px 0 100px 0;
-    background: linear-gradient(to bottom, 
-        var(--bg-secondary) 0%, 
-        var(--bg-secondary) 40%, 
-        rgba(44, 62, 80, 0.3) 60%,
-        rgba(44, 62, 80, 0.7) 80%,
-        #2c3e50 100%);
+    background: var(--bg-secondary);
     position: relative;
     z-index: 1;
 }

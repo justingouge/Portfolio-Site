@@ -628,6 +628,17 @@ function initStarryBackground() {
         cloudsContainer.appendChild(cloud);
     }
     
+    // Create sun for light mode
+    const sun = document.createElement('div');
+    sun.className = 'sun';
+    sun.id = 'sun';
+    
+    // Random position in upper portion of screen
+    sun.style.left = Math.random() * 70 + 15 + '%'; // 15% to 85% from left
+    sun.style.top = Math.random() * 30 + 10 + '%'; // 10% to 40% from top
+    
+    cloudsContainer.appendChild(sun);
+    
     // Create shooting stars for dark mode
     function createShootingStar() {
         const starsContainer = document.getElementById('stars');
