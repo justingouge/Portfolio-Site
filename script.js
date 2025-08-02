@@ -268,20 +268,39 @@ function initContactForm() {
                 return;
             }
             
-            // Simulate form submission
+            // Submit to Formspree
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
             
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
             
-            // Simulate API call
-            setTimeout(() => {
-                showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
-                contactForm.reset();
+            // Submit form to Formspree
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
+                    contactForm.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwnProperty.call(data, 'errors')) {
+                            showNotification(data["errors"].map(error => error["message"]).join(", "), 'error');
+                        } else {
+                            showNotification('Oops! There was a problem submitting your form', 'error');
+                        }
+                    });
+                }
+            }).catch(error => {
+                showNotification('Oops! There was a problem submitting your form', 'error');
+            }).finally(() => {
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
-            }, 2000);
+            });
         });
     }
 }

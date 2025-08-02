@@ -535,7 +535,7 @@
                 </div>
 
                 <div class="contact-form-box">
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xpwzgqpv" method="POST">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
@@ -548,6 +548,8 @@
                         <div class="form-group">
                             <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
+                        <input type="hidden" name="_replyto" value="gougej@yorku.ca">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission">
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
