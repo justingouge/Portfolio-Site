@@ -1007,6 +1007,20 @@ h1, h2, h3, h4, h5, h6 {
     align-items: start;
 }
 
+.contact-info-box {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+.contact-form-box {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
 .contact-info h3 {
     color: var(--text-primary);
     margin-bottom: 1rem;
@@ -1075,9 +1089,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-form {
-    background: var(--bg-secondary);
-    padding: 2rem;
-    border-radius: 15px;
+    background: transparent;
+    padding: 0;
 }
 
 .form-group {
